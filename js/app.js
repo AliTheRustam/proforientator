@@ -43,13 +43,17 @@ function renderCatalog() {
         </div>
       </div>
       <details class="prof-details">
-        <summary>Пути обучения и попробуй сейчас</summary>
+        <summary>Пути обучения, смежные профессии и попробуй сейчас</summary>
         <div class="details-inner">
           <div class="prof-block">
             <h4>Как прийти в профессию</h4>
             <p class="edu-line"><b>Вуз:</b> ${p.education.vuz}</p>
             <p class="edu-line"><b>Колледж:</b> ${p.education.college}</p>
             <p class="edu-line"><b>Курсы:</b> ${p.education.courses}</p>
+          </div>
+          <div class="prof-block">
+            <h4>Смежные профессии</h4>
+            <p class="edu-line">${p.related}</p>
           </div>
           <div class="prof-block">
             <h4>Попробуй сейчас</h4>

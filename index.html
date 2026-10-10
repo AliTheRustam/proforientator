@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>От интересов до профессии — сайт-профориентатор</title>
+  <meta name="description" content="Помогаем школьникам выбрать профессию через интересы, реальные задачи и честную статистику рынка труда">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">От&nbsp;интересов <span>до&nbsp;профессии</span></a>
+      <nav class="nav">
+        <a href="#quiz">Тест</a>
+        <a href="#professions">Профессии</a>
+        <a href="#next">Что дальше</a>
+      </nav>
+      <a href="#quiz" class="btn btn-small">Пройти тест</a>
+    </div>
+  </header>
+
+  <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+  <main>
+  <!-- ГЕРОЙ -->
+  <section class="hero" id="top">
+    <div class="container">
+      <h1>Какую профессию выбрать?<br>Ответ — в твоих интересах</h1>
+      <p class="hero-sub">
+        Короткий тест подскажет, какие профессии тебе близки. Для каждой — реальные задачи,
+        честные минусы и цифры рынка труда с hh.ru: сколько вакансий и сколько платят.
+      </p>
+      <div class="hero-actions">
+        <a href="#quiz" class="btn btn-big">Пройти тест — 2 минуты</a>
+        <a href="#professions" class="btn btn-ghost btn-big">Смотреть профессии</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>6</b><span>профессий с разбором</span></div>
+        <div class="stat"><b>8</b><span>вопросов в тесте</span></div>
+        <div class="stat"><b>hh.ru</b><span>источник данных о рынке</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТЕСТ -->
+  <section class="section" id="quiz">
+    <div class="container narrow">
+      <h2>Тест: от интересов к профессии</h2>
+      <p class="section-lead">
+        Восемь вопросов о том, что тебе нравится и как ты учишься. В конце — три профессии
+        с наибольшим совпадением и объяснением, почему они попали в рекомендацию.
+      </p>
+
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-progress"><div class="quiz-progress-bar" id="quizBar"></div></div>
+        <div class="quiz-counter" id="quizCounter">Вопрос 1 из 8</div>
+        <h3 class="quiz-question" id="quizQuestion">Что тебе ближе по духу?</h3>
+        <div class="quiz-answers" id="quizAnswers"></div>
+        <button class="quiz-back" id="quizBack" hidden>← Назад</button>
+      </div>
+
+      <div class="quiz-result" id="quizResult" hidden>
+        <h3>Твои совпадения</h3>
+        <p class="quiz-result-lead" id="resultLead"></p>
+        <div id="resultCards"></div>
+        <button class="btn" id="quizRestart">Пройти заново</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРОФЕССИИ -->
+  <section class="section section-alt" id="professions">
+    <div class="container">
+      <h2>Каталог профессий</h2>
+      <p class="section-lead">
+        Шесть профессий: чем занимаешься каждый день, что нужно уметь, какие есть плюсы
+        и честные минусы. Цифры рынка — данные hh.ru на 10.10.2026.
+      </p>
+      <div class="prof-grid" id="profGrid"></div>
+    </div>
+  </section>
+
+  <!-- ЧТО ДАЛЬШЕ -->
+  <section class="section" id="next">
+    <div class="container narrow">
+      <h2>Что делать с результатом</h2>
+      <p class="section-lead">
+        Тест даёт направление, а не приговор. Проверь его практикой — три шага, которые
+        можно сделать уже сейчас, в 10 классе.
+      </p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Проверь на деле</h3>
+          <p>В каждой карточке есть блок «Попробуй сейчас»: маленькая задача на выходные. Если после неё интерес не пропал — направление верное.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Сверь с цифрами</h3>
+          <p>Блок «Рынок труда» в карточке показывает спрос и оплату. Помни: высокая оплата ≠ счастливая работа, но и выбор «в пустоту» — тоже риск.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Поговори с человеком</h3>
+          <p>Найди специалиста в знакомых или напиши в комментарии к вакансии на hh.ru. Три вопроса о реальной работе стоят больше, чем сто описаний.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- О ПРОЕКТЕ -->
+  <footer class="site-footer">
+    <div class="container narrow">
+      <h3>О проекте</h3>
+      <p>
+        Сайт-профориентатор «От интересов до профессии» — практико-ориентированный проект
+        по профориентации школьников. Тест построен на интересах к типам задач, каталог
+        раскрывает профессии через реальные рабочие задачи и ограничения, а не через
+        названия и стереотипы.
+      </p>
+      <p class="footer-source">
+        <b>Источник данных о рынке труда:</b> hh.ru, показатели вакансий и зарплат по
+        поисковым запросам, данные на 10.10.2026. Показатели платформы — investor.hh.ru.
+        Данные носят справочный характер и обновляются ежедневно.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
